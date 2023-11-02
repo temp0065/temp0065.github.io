@@ -1,7 +1,11 @@
 /* Acts as colour on sidebar, as wrapper will cover it up in the middle */
 body {
-    background-color: goldenrod;
+    background-color: rgb(209, 178, 98);
     font-size: 16px;
+    margin-top: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 /* Sets all content in a wrapper that takes up 80% of the page, then set top/bottom to 0 and have right/left margins auto adjust */
@@ -9,47 +13,78 @@ body {
     width: 80%;
     background-color: lightgoldenrodyellow;
     margin: 0 auto;
+    padding: 0.5%;
 }
 
 .cover-image {
-    max-width: 50%;
-    /* position: absolute; */
+    max-width: 100%;
+    position: relative;
 }
 
 header h1 {
     position: relative;
+
 }
 
 .navbar {
-    position: relative;
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0;
 }
 
-/* Removes bullets from list */
+/* Removes bullets from list, sets the width equal then centers*/
 nav li {
     list-style: none;
     display: inline-block;
-    width: 25%;
-
+    width: 31%;
+    text-align: center;
 }
 
-form {
+#menucenter {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.borderbox {
     border: 1px solid black;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.textfield {
+    display: block;
+    width: 98%;
+    margin: 1rem 0rem
 }
 
 article ul {
     padding-left: 0;
 }
 
+/* puts image to left of text and makes it wraparound by having 1rem space on right and bottom*/
 .float img {
-    height: auto;
     width: 18%;
     float: left;
     margin-right: 1rem;
     margin-bottom: 1rem;
 }
 
+/* All content below is cleared from the float */
 .clearfix::after {
     content: "";
     clear: both;
     display: block;
+}
+
+#message {
+    height: 6rem;
+}
+
+#button {
+    display: block;
+}
+
+footer {
+    position: relative;
+    right: -85rem;
 }

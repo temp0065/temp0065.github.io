@@ -18,7 +18,7 @@
         <nav class="navbar">
             <ul>
                 <li>Home</li>
-                <li>Images</li>
+                <li id="menucenter">Images</li>
                 <li>About</li>
             </ul>
         </nav>
@@ -46,31 +46,35 @@
             </ul>
         </article>
 
-        <article>
-            <h2>Contact to learn more</h2>
-            <form>
-                <label for="name">Your Name</label>
-                <input id="name" type="text">
+        <h2>Contact to learn more</h2>
+        <div class="borderbox">
+            <article>
+                <form>
+                    <label for="name">Your Name</label>
+                    <input id="name" type="text" class="textfield">
 
-                <label for="email">Your Email</label>
-                <input id="email" type="email">
+                    <label for="email">Your Email</label>
+                    <input id="email" type="email" class="textfield">
 
-                <label for="message">Message</label>
-                <input id="message" type="text">
-                
-                <h3>Would you like to pet the proboscis monkey?</h3>
-                <label for="yes">Yes</label>
-                <input type="radio" id="yes" name="pet" value="yes">
+                    <label for="message">Message</label>
+                    <input id="message" type="text" class="textfield">
+                </form>
 
-                <label for="no">No</label>
-                <input type="radio" id="no" name="pet" value="no">
+                <form>   
+                    <h3>Would you like to pet the proboscis monkey?</h3>
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="pet" value="yes">
 
-                <label for="maybe">Maybe</label>
-                <input type="radio" id="maybe" name="pet" value="maybe">
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="pet" value="no">
 
-                <button type="submit">Send</button>
-            </form>
-        </article>
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" id="maybe" name="pet" value="maybe">
+
+                    <button type="submit" id="button">Send</button>
+                </form>    
+            </article>
+        </div>
 
         <!-- &#169 loads copyright symbol -->
         <footer>&#169;Nathan Templeton</footer>
