@@ -1,0 +1,43 @@
+/* Acts as colour on sidebar, as wrapper will cover it up in the middle */
+body {
+    background-color: goldenrod;
+    font-size: 16px;
+}
+
+/* Sets all content in a wrapper that takes up 80% of the page, then set top/bottom to 0 and have right/left margins auto adjust */
+.wrapper {
+    width: 80%;
+    background-color: lightgoldenrodyellow;
+    margin: 0 auto;
+}
+
+.cover-image {
+    max-width: 50%;
+    /* position: absolute; */
+}
+
+header h1 {
+    position: relative;
+    top: 50%;
+    right: -40%;
+}
+
+.navbar {
+    position: relative;
+}
+
+/* Removes bullets from list */
+nav li {
+    list-style: none;
+    display: inline-block;
+    width: 25%;
+
+}
+
+form {
+    border: 1px solid black;
+}
+
+article ul {
+    padding-left: 0;
+}
