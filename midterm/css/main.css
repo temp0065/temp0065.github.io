@@ -18,8 +18,6 @@ body {
 
 header h1 {
     position: relative;
-    top: 50%;
-    right: -40%;
 }
 
 .navbar {
@@ -40,4 +38,18 @@ form {
 
 article ul {
     padding-left: 0;
+}
+
+.float img {
+    height: auto;
+    width: 18%;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
 }
