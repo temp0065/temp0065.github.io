@@ -20,6 +20,7 @@ main article h2 {
     font-size: 28px;
 }
 
+/* margin and width are set the stretch equally on both sides, as padding in wrapper does not let it strech fully */
 .cover-image {
     max-width: 101.4%;
     height: auto;
