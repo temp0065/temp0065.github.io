@@ -1,4 +1,4 @@
-/* Acts as colour on sidebar, as wrapper will cover it up in the middle */
+/* Acts as colour on sidebar, as wrapper will cover it up in the middle, sets font as 16 for easy rem and standard text size*/
 body {
     background-color: rgb(209, 178, 98);
     font-size: 16px;
@@ -13,14 +13,17 @@ body {
     width: 80%;
     background-color: lightgoldenrodyellow;
     margin: 0 auto;
-    padding: 0.5%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
 }
 
 .cover-image {
     max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
+/* Set image as relative and sets up text style */
 .container {
     position: relative;
     text-align: center;
@@ -37,6 +40,12 @@ body {
     font-size: 1.5rem;
     padding-bottom: 0.5rem;
     padding-top: 0;
+    font-weight: 600;
+}
+
+nav ul {
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 /* Removes bullets from list, sets the width equal then centers*/
@@ -59,6 +68,7 @@ nav li {
     margin-bottom: 2rem;
 }
 
+/* puts each text form on an individual line, and gives clean separation with margin */
 .textfield {
     display: block;
     width: 98%;
@@ -78,7 +88,7 @@ article ul {
     padding-bottom: 2rem;
 }
 
-/* All content below is cleared from the float */
+/* All content below is cleared from the float, allowing only the text to wrap around the image*/
 .clearfix::after {
     content: "";
     clear: both;
@@ -89,6 +99,7 @@ article ul {
     height: 6rem;
 }
 
+/* Sets button apart from form and gives it style */
 #button {
     display: block;
     margin-top: 1rem;
@@ -99,5 +110,13 @@ article ul {
 
 footer {
     position: relative;
-    right: -85rem;
+    right: -85%;
+    bottom: 20px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+form h3 {
+    font-weight: 100;
 }
