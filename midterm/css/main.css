@@ -5,7 +5,6 @@ body {
     margin-top: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
 /* Sets all content in a wrapper that takes up 80% of the page, then set top/bottom to 0 and have right/left margins auto adjust */
@@ -17,23 +16,30 @@ body {
     padding-right: 0.5%;
 }
 
+main article h2 {
+    font-size: 28px;
+}
+
 .cover-image {
-    max-width: 100%;
+    max-width: 101.4%;
     height: auto;
-    object-fit: cover;
+    margin-left: -0.7%;
 }
 
 /* Set image as relative and sets up text style */
 .container {
     position: relative;
     text-align: center;
-    color: white;
+    color: black;
 }
 
+/* Sets position of absolute so it can move over image without being covered */
 .centertext {
 
     font-size: 3.8rem;
     position: absolute;
+    top: 250px;
+    right: 450px;
 }
 
 .navbar {
@@ -82,7 +88,7 @@ article ul {
 
 /* puts image to left of text and makes it wraparound by having 1rem space on right and bottom*/
 .float img {
-    width: 18%;
+    width: 20%;
     float: left;
     padding-right: 1rem;
     padding-bottom: 2rem;
