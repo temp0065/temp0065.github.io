@@ -1,0 +1,43 @@
+.heading-wrapper {
+    margin: 0 auto;
+    background-color: #222;
+    color: white;
+    width: 1200px;
+}
+
+header .heading-wrapper {
+    color: #c78b07;
+}
+
+.article-block {
+    margin: 0 auto;
+    background-color: #ffe6ac;
+    color: black;
+}
+
+.welcome-article {
+    background-image: url("../images/main-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.vision {
+    background-image: url("../images/vision.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.footer-wrapper {
+    color: #c78b07;
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #222;
+}
+
+/* Changes value of links default blue color to color of parent */
+a {
+    color: inherit;
+}
+
