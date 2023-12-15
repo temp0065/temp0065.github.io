@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>temp0065 Final Assignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
     <link href="css/reset.css" rel="reset">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -12,7 +18,7 @@
     <header>
         <div class="heading-wrapper">
             <!-- This site needs many different types of wrappers, as there are parts that are sized differently than other sections -->
-            <img src="images/logo.png" alt="Logo of stars">
+            <img src="images/logo.png" alt="Logo of stars" id="logo">
             <nav>
                 <ul>
                     <li>Home</li>
@@ -22,11 +28,11 @@
                     <li>Contact</li>
                 </ul>                
             </nav>
-            <form>
-                <label for="search">Search</label>
-                <input id="search" type="text">
+            <form class="search-bar">
+                <label for="search"></label>
+                <input id="search" type="text" placeholder="Search">
                 <!-- Adds in icon for search bar -->
-                <span class="material-symbols-outlined">search</span>
+                <span class="material-symbols-outlined" id="search">search</span>
             </form>
         </div>      
     </header>
@@ -37,20 +43,20 @@
             <!-- Will add background image in this header through CSS, as it is an image which is not key to the information and sits behind -->
             <article>
                 <h1>Welcome to Three Star Media</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ducimus harum, ea possimus, ex quae incidunt fugiat quibusdam quaerat molestias nesciunt consequuntur impedit, magnam nobis illum hic nihil labore saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur quasi placeat, mollitia harum earum maxime ipsa laudantium repudiandae unde asperiores esse est. Dolorum sint adipisci voluptatibus quasi totam id? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus numquam corporis alias eum porro dolore voluptatem repellendus doloribus esse explicabo voluptate enim, architecto provident mollitia delectus nostrum veniam dignissimos obcaecati.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem ducimus harum, ea possimus, ex quae incidunt fugiat quibusdam quaerat molestias nesciunt consequuntur impedit, magnam nobis illum hic nihil labore saepe? Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                 <button type="button">Connect with us</button>
                 <span class="material-symbols-outlined">play_arrow</span>
             </article>
         </div>
 
-        <div class="heading-wrapper">
+        <div class="heading-wrapper bg" id="#about-article">
             <!-- article-block class will be used in CSS to created the beige boxes around the article content -->
             <article class="article-block">
-                <img src="images/about-us.jpg" alt="Image of ping pong table">
+                <img src="images/about-us.jpg" alt="Image of ping pong table" id="about-img">
                 <h2>About Us</h2>
                 <!-- Most p text in document is lorem and placeholder -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing  adapting big great super elit. At, quasi cumque facere blanditiis quos nihil obcaecati accusamus dolores harum modi vel fugiat, itaque repellendus quod ex molestias veritatis quas aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolorum vel nobis, reiciendis ipsum laudantium possimus sit esse temporibus consectetur quisquam non ut quasi iste dolor saepe maiores excepturi delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptate nostrum recusandae mollitia ad expedita deleniti, laboriosam ut quasi velit aperiam voluptas doloremque?</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam non, cumque odio animi eius dignissimos dolore? Architecto, magni. Culpa dolorum nulla ad voluptatum consequuntur voluptatibus deleniti perspiciatis soluta, officia delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ad illo vel officia veritatis dicta, iste, et ipsam a quis quaerat optio cupiditate quasi ullam, temporibus eveniet minima velit mollitia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias temporibus reiciendis cum vero! Quia odio, dicta quisquam iure modi, in aperiam itaque aspernatur beatae amet recusandae molestiae, quibusdam eveniet debitis!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing  adapting big great super elit. At, quasi cumque facere blanditiis quos nihil obcaecati accusamus dolores harum modi vel fugiat, itaque repellendus quod ex molestias veritatis quas aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam non, cumque odio animi eius dignissimos dolore? Architecto, magni. Culpa dolorum nulla ad voluptatum consequuntur voluptatibus deleniti perspiciatis soluta, officia delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </article>
         </div>
     
@@ -58,45 +64,55 @@
             
         <div class="parent">
             <!-- Creates the large article blocks -->
-            <article class="article-block">
+            <article class="article-block bg">
                 <img src="images/digital.jpg" alt="Image of guy working on tech">
                 <h3>Digital Transformation</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quasi cumque facere blanditiis quos nihil obcaecati accusamus dolores harum modi vel fugiat, itaque repellendus quod ex molestias veritatis quas aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolorum vel nobis, reiciendis ipsum laudantium possimus sit esse temporibus consectetur quisquam non ut quasi iste dolor saepe maiores excepturi delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptate nostrum recusandae mollitia ad expedita deleniti, laboriosam ut quasi velit aperiam voluptas doloremque?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quasi cumque facere blanditiis quos nihil obcaecati accusamus dolores harum modi vel fugiat, itaque repellendus quod ex molestias veritatis quas aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <!-- All buttons are purely decorative and will be styled in CSS -->
-                <button type="button" class="main-buttons">Digital Plans</button>
-                <span class="material-symbols-outlined">play_arrow</span>
+                <div>
+                    <button type="button" class="main-buttons">Digital Plans</button>
+                    <span class="material-symbols-outlined article-arrow">play_arrow</span>
+                </div>
             </article>
     
-            <article class="article-block">
+            <article class="article-block bg">
                 <img src="images/marketing.jpg" alt="Image of laptop with statistics">
                 <h3>Marketing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quasi cumque facere blanditiis quos nihil obcaecati accusamus dolores harum modi vel fugiat, itaque repellendus quod ex molestias veritatis quas aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolorum vel nobis, reiciendis ipsum laudantium possimus sit esse temporibus consectetur quisquam non ut quasi iste dolor saepe maiores excepturi delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptate nostrum recusandae mollitia ad expedita deleniti, laboriosam ut quasi velit aperiam voluptas doloremque?</p>
-                <button type="button" class="main-buttons">Marketing Plans</button>
-                <span class="material-symbols-outlined">play_arrow</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quasi cumque facere blanditiis quos nihil obcaecati accusamus dolores harum modi vel fugiat, itaque repellendus quod ex molestias veritatis quas aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div>
+                    <button type="button" class="main-buttons">Marketing Plans</button>
+                    <span class="material-symbols-outlined article-arrow">play_arrow</span>
+                </div>
             </article>
     
-            <article class="article-block">
+            <article class="article-block bg">
                 <img src="images/video.jpg" alt="Image of Youtube loading">
                 <h3>Video Production</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quasi cumque facere blanditiis quos nihil obcaecati accusamus dolores harum modi vel fugiat, itaque repellendus quod ex molestias veritatis quas aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolorum vel nobis, reiciendis ipsum laudantium possimus sit esse temporibus consectetur quisquam non ut quasi iste dolor saepe maiores excepturi delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptate nostrum recusandae mollitia ad expedita deleniti, laboriosam ut quasi velit aperiam voluptas doloremque?</p>
-                <button type="button" class="main-buttons">Video Plans</button>
-                <span class="material-symbols-outlined">play_arrow</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quasi cumque facere blanditiis quos nihil obcaecati accusamus dolores harum modi vel fugiat, itaque repellendus quod ex molestias veritatis quas aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div>
+                    <button type="button" class="main-buttons">Video Plans</button>
+                    <span class="material-symbols-outlined article-arrow">play_arrow</span>
+                </div>
             </article>
     
-            <article class="article-block">
+            <article class="article-block bg">
                 <img src="images/web.jpg" alt="Phone on notebook">
                 <h3>Web Development</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quasi cumque facere blanditiis quos nihil obcaecati accusamus dolores harum modi vel fugiat, itaque repellendus quod ex molestias veritatis quas aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolorum vel nobis, reiciendis ipsum laudantium possimus sit esse temporibus consectetur quisquam non ut quasi iste dolor saepe maiores excepturi delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptate nostrum recusandae mollitia ad expedita deleniti, laboriosam ut quasi velit aperiam voluptas doloremque?</p>
-                <button type="button" class="main-buttons">Web Plans</button>
-                <span class="material-symbols-outlined">play_arrow</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quasi cumque facere blanditiis quos nihil obcaecati accusamus dolores harum modi vel fugiat, itaque repellendus quod ex molestias veritatis quas aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div>
+                    <button type="button" class="main-buttons">Web Plans</button>
+                <span class="material-symbols-outlined article-arrow">play_arrow</span>
+                </div>
             </article>
     
-            <article class="article-block">
+            <article class="article-block bg">
                 <img src="images/print.jpg" alt="Newspaper boxes in city">
                 <h3>Print</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quasi cumque facere blanditiis quos nihil obcaecati accusamus dolores harum modi vel fugiat, itaque repellendus quod ex molestias veritatis quas aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque dolorum vel nobis, reiciendis ipsum laudantium possimus sit esse temporibus consectetur quisquam non ut quasi iste dolor saepe maiores excepturi delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur voluptate nostrum recusandae mollitia ad expedita deleniti, laboriosam ut quasi velit aperiam voluptas doloremque?</p>
-                <button type="button" class="main-buttons">Print Plans</button>
-                <span class="material-symbols-outlined">play_arrow</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, quasi cumque facere blanditiis quos nihil obcaecati accusamus dolores harum modi vel fugiat, itaque repellendus quod ex molestias veritatis quas aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <div>
+                    <button type="button" class="main-buttons">Print Plans</button>
+                <span class="material-symbols-outlined article-arrow">play_arrow</span>
+                </div>
             </article>
         </div>
     </main>
@@ -104,35 +120,37 @@
     <!-- Will add background image to this aside instead of having it in HTML, as it is not a key element to the aside-->
     <aside class="vision-wrapper vision">
         <h3>Our Vision</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aliquid molestiae unde fugiat odit natus tenetur maxime velit officia, veniam eligendi non libero culpa ducimus quam aut est, sapiente cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quidem nihil commodi fuga quos! Magnam quasi neque aspernatur eius? Assumenda vero amet quia nobis ipsa corrupti? Quidem eaque libero odio. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet architecto culpa aliquam dicta cumque qui nostrum. Eum sed laudantium sequi odio incidunt quod eaque non sit quasi possimus, ducimus impedit.</p>
-        <button type="button">Learn More</button>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea aliquid molestiae unde fugiat odit natus tenetur maxime velit officia, veniam eligendi non libero culpa ducimus quam aut est, sapiente cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        <div>
+            <button type="button" id="vision-button">Learn More</button>
         <span class="material-symbols-outlined">play_arrow</span>
+        </div>
     </aside>
 
     <div class="wrapper">
-        <h2>Our Team</h2>
+        <h2 class="lone-headings-2">Our Team</h2>
 
-            <article class="owner-box">
+            <article class="owner-box bg">
                 <!-- owner box class will create beige box formatting surrounding the content -->
                 <img src="images/john.jpg" alt="Image of CEO John">
                 <h3>John Doe</h3>
                 <h4>CEO and Co-owner</h4>
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quis quam accusamus dolorum mollitia? Assumenda dicta harum rerum doloribus amet molestias voluptate error quasi nemo? Atque esse doloremque ea blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, exercitationem iure aperiam ad reiciendis consequuntur eveniet facere eos veniam laborum consectetur, perferendis culpa sit saepe, dolores ab dolorum autem quam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quis quam accusamus dolorum mollitia? Assumenda dicta harum rerum doloribus amet molestias voluptate error quasi nemo? Atque esse doloremque ea blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </article>
             
-            <article class="owner-box">
+            <article class="owner-box bg">
                 <img src="images/bob.jpg" alt="Image of CFO Bob">
                 <h3>Bob Rite</h3>
                 <h4>CFO and Co-owner</h4>
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quis quam accusamus dolorum mollitia? Assumenda dicta harum rerum doloribus amet molestias voluptate error quasi nemo? Atque esse doloremque ea blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, exercitationem iure aperiam ad reiciendis consequuntur eveniet facere eos veniam laborum consectetur, perferendis culpa sit saepe, dolores ab dolorum autem quam?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quis quam accusamus dolorum mollitia? Assumenda dicta harum rerum doloribus amet molestias voluptate error quasi nemo? Atque esse doloremque ea blanditiis? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </article> 
 
-        <article class="contact">
-            <h2>Contact Us</h2>
-            <h3>Send us a message</h3>
-            <form>
+        <article>
+            <h2 class="lone-headings-2">Contact Us</h2>
+            <h3 id="message-send">Send us a message</h3>
+            <form id="contact">
                 <!-- forms are purely decorative -->
                 <p>Full Name</p>
                 <label for="name"></label>
@@ -147,7 +165,7 @@
                 <input id="message" type="text">
 
             </form>
-            <button type="submit">Send</button>
+            <button type="submit" id="send-button">Send</button>
         </article>
 
         <section>
@@ -182,8 +200,8 @@
 
     <div class="footer-wrapper">
         <!-- &#169 makes copyrright symbol -->
-        <footer>&#169; Copyright Three Star Media, 2020</footer>
-        <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
+        <footer class="footer">&#169; Copyright Three Star Media, 2020</footer>
+        <p class="footer">All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
     </div>
 </body>
 </html>
