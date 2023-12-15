@@ -317,18 +317,18 @@ hr {
     right: -20px;
 }
 
-#search {
+#search-icon {
     border: 1px solid #c78b07;
     position: relative;
     font-size: 3rem;
     right: -16px;
-    bottom: 13px;
+    bottom: 1px;
 }
 
 input::placeholder {
     font-size: 1.7rem;
     position: relative;
-    bottom: 8px;
+    bottom: -6px;
 }
 
 iframe {
