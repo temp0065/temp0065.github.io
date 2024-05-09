@@ -72,6 +72,21 @@ header {
   color: var(--primary);
 }
 
+.search {
+  display: flex;
+  justify-content: center;
+}
+
+.searchbar {
+  width: 100%;
+}
+
+.search-btn {
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  background-color: transparent;
+}
+
 /* -------Our services------*/
 
 .services-grid {
@@ -85,6 +100,11 @@ header {
   background-color: var(--secondary);
   display: flex;
   flex-direction: column;
+}
+
+.btn {
+  background-color: var(--dark);
+  display: inline-block;
 }
 
 /* -------Our Vision------*/
