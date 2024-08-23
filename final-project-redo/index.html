@@ -13,25 +13,27 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body class="wrapper">
-    <header>
+    <header role="heading">
         <img src="images/logo.png" alt="Logo of Three Star Media" class="logo">
-        <nav class="main-nav" role="navigation">
-            <ul class="nav-list">
-                <li class="nav-item">Home</li>
-                <li class="nav-item">About Us</li>
-                <li class="nav-item">Services</li>
-                <li class="nav-item">Team</li>
-                <li class="nav-item">Contact</li>
-            </ul>
-        </nav>
-        <form action="" class="search">
-            <input type="text" placeholder="Search.." name="search" class="searchbar">
-            <button type="submit" class="search-btn"><span class="material-symbols-outlined">search</span></button>
-        </form>
+        <div class="nav-flex">
+            <nav class="main-nav" role="navigation">
+                <ul>
+                    <a href="index.html" class="nav-item"><li>Home</li></a>
+                    <a href="#" class="nav-item"><li>About Us</li></a>
+                    <a href="#" class="nav-item"><li>Services</li></a>
+                    <a href="#" class="nav-item"><li>Team</li></a>
+                    <a href="#" class="nav-item"><li>Contact</li></a>
+                </ul>
+            </nav>
+            <form action="" class="search">
+                <input type="text" placeholder="Search.." name="search" class="searchbar">
+                <button type="submit" class="search-btn"><span class="material-symbols-outlined">search</span></button>
+            </form>
+        </div>
     </header>
 
-    <main>
-        <article class="hero-image">
+    <main role="main">
+        <article class="hero-banner">
             <div class="hero-container">
                 <h1>Welcome to Three Star Media</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, quaerat expedita assumenda quisquam possimus aperiam iure repudiandae nobis ut. Adipisci quod aspernatur dolore perspiciatis ab odit debitis sint cumque natus. Lorem ipsum dolor sit amet consectetur adipisicing elit.?</p>
@@ -39,7 +41,7 @@
             </div>
         </article>
         
-        <section>
+        <section class="about">
             <img src="images/about-us.jpg" alt="Image of ping pong table">
             <h2>About Us</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorem rem, quae debitis possimus nisi id iure repudiandae blanditiis, quisquam distinctio molestias. Corporis, quaerat obcaecati saepe dolorem sunt explicabo vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus deleniti voluptas impedit? Nemo fugiat possimus quibusdam ullam! Eius maiores, omnis ea possimus vel ullam consectetur, eos optio voluptas nulla deleniti.</p>
@@ -53,28 +55,36 @@
                     <img src="images/digital.jpg" alt="Person using devices">
                     <h3>Digital Transformation</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorem rem, quae debitis possimus nisi id iure repudiandae blanditiis, quisquam distinctio molestias. Corporis, quaerat obcaecati saepe dolorem sunt explicabo vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus deleniti voluptas impedit? Nemo fugiat possimus quibusdam ullam! Eius maiores, omnis ea possimus vel ullam consectetur, eos optio voluptas nulla deleniti.</p>
-                    <a href="#" class="btn">Digital Plans <span class="material-symbols-outlined">arrow_right</span></a>
+                    <a href="#">
+                        <button class="btn">Digital Plans<span class="material-symbols-outlined">arrow_right</span></button>
+                    </a>
                 </article>
 
                 <article class="service-items">
                     <img src="images/marketing.jpg" alt="Laptop with statistics">
                     <h3>Marketing</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorem rem, quae debitis possimus nisi id iure repudiandae blanditiis, quisquam distinctio molestias. Corporis, quaerat obcaecati saepe dolorem sunt explicabo vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus deleniti voluptas impedit? Nemo fugiat possimus quibusdam ullam! Eius maiores, omnis ea possimus vel ullam consectetur, eos optio voluptas nulla deleniti.</p>
-                    <a href="#" class="btn">Marketing Plans<span class="material-symbols-outlined">arrow_right</span></a>
+                    <a href="#">
+                        <button class="btn">Marketing Plans<span class="material-symbols-outlined">arrow_right</span></button>
+                    </a>
                 </article>
 
                 <article class="service-items">
                     <img src="images/video.jpg" alt="Youtube on phone">
                     <h3>Video Production</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorem rem, quae debitis possimus nisi id iure repudiandae blanditiis, quisquam distinctio molestias. Corporis, quaerat obcaecati saepe dolorem sunt explicabo vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus deleniti voluptas impedit? Nemo fugiat possimus quibusdam ullam! Eius maiores, omnis ea possimus vel ullam consectetur, eos optio voluptas nulla deleniti.</p>
-                    <a href="#" class="btn">Video Plans<span class="material-symbols-outlined">arrow_right</span></a>
+                    <a href="#">
+                        <button class="btn">Video Plans<span class="material-symbols-outlined">arrow_right</span></button>
+                    </a>
                 </article>
 
                 <article class="service-items">
                     <img src="images/web.jpg" alt="Instagram on phone">
                     <h3>Web Development</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorem rem, quae debitis possimus nisi id iure repudiandae blanditiis, quisquam distinctio molestias. Corporis, quaerat obcaecati saepe dolorem sunt explicabo vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus deleniti voluptas impedit? Nemo fugiat possimus quibusdam ullam! Eius maiores, omnis ea possimus vel ullam consectetur, eos optio voluptas nulla deleniti.</p>
-                    <a href="#" class="btn">Web Plans<span class="material-symbols-outlined">arrow_right</span></a>
+                    <a href="#">
+                        <button class="btn">Digital Plans<span class="material-symbols-outlined">arrow_right</span></button>
+                    </a>
                 </article>
 
                 
@@ -120,7 +130,7 @@
         <h2 class="section-heading">Contact Us</h2>
         <article>
             <h3>Send us a message</h3>
-            <form action="">
+            <form action="" class="contact-form">
                 <label for="name">Full Name</label>
                 <input type="text">
     
@@ -128,7 +138,7 @@
                 <input type="text">
     
                 <label for="message">Message</label>
-                <textarea name="" id=""></textarea>
+                <textarea name="message" id="message"></textarea>
     
                 <button class="send-btn">Send</button>
             </form>
@@ -160,7 +170,7 @@
 
     <footer>
         <p>&copy; Copyright Three Star Media, 2020</p>
-        <p>All images are taken from <a href="https://unsplash.com/">unsplash</a></p>
+        <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
     </footer>
 
 </body>

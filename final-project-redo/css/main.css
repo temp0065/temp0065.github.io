@@ -10,6 +10,7 @@
   --secondary: #ffe6ac;
   --dark: #222;
   --light: #ffffff;
+  --btn-font-size: 1.4rem;
 }
 
 
@@ -45,6 +46,10 @@ h3 {
   font-weight: 600;
 }
 
+textarea {
+  resize: none;
+}
+
 /* ---------------
     HOMEPAGE
 --------------- */
@@ -62,19 +67,25 @@ header {
   background-color: var(--dark);
 }
 
-.nav-list {
+.nav-flex {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
 }
 
 .nav-item {
   color: var(--primary);
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin: 30px;
 }
 
 .search {
   display: flex;
-  justify-content: center;
+  width: 60%;
 }
 
 .searchbar {
@@ -87,12 +98,49 @@ header {
   background-color: transparent;
 }
 
+/* -------Heading------*/
+
+.hero-banner {
+  background-image: url(../images/main-banner.jpg) no-repeat;
+  background-size: cover;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: rgba(34, 34, 34, 0.453);
+}
+
+.welcome-btn {
+  background-color: var(--primary);
+  text-decoration: none;
+  color: var(--dark);
+  padding: 20px;
+  font-size: var(--btn-font-size);
+}
+
+/* -------About Us------*/
+
+.about {
+  background-color: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.about img {
+  margin: 0 auto;
+  width: 100%;
+}
+
 /* -------Our services------*/
 
 .services-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   row-gap: 15px;
 }
 
@@ -100,12 +148,33 @@ header {
   background-color: var(--secondary);
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .btn {
   background-color: var(--dark);
-  display: inline-block;
+  color: var(--light);
+  font-size: var(--btn-font-size);
+  padding: 10px;
+  align-self: flex-start;
 }
+
+.btn span {
+  font-size: 4rem;
+}
+
+/* 
+@media (min-width: 760px) {
+  .our-services {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+} */
 
 /* -------Our Vision------*/
 
@@ -132,10 +201,25 @@ header {
 
 table, th, td {
   border: 1px solid var(--dark);
+  width: 100%;
 }
 
 th {
   background-color: #ffe6ac;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.send-btn {
+  width: 80px;
+  padding: 3px;
+  border: none;
+  background-color: #222;
+  color: #c78c06;
+  font-size: 1.3rem;
 }
 
 /* -------Footer------*/
