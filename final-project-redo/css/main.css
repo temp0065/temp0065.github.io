@@ -10,7 +10,8 @@
   --secondary: #ffe6ac;
   --dark: #222;
   --light: #ffffff;
-  --btn-font-size: 1.4rem;
+  --btn-font-size: 1.6rem;
+  --btn-padding: 30px;
 }
 
 
@@ -48,6 +49,11 @@ h3 {
 
 textarea {
   resize: none;
+}
+
+/* Makes icon bigger on buttons */
+.btn .material-symbols-outlined, .welcome-btn .material-symbols-outlined, .vision-btn .material-symbols-outlined {
+  font-size: 3rem;
 }
 
 /* ---------------
@@ -103,6 +109,8 @@ header {
 .hero-banner {
   background-image: url(../images/main-banner.jpg) no-repeat;
   background-size: cover;
+  background-position: center;
+
 }
 
 .hero-container {
@@ -113,6 +121,8 @@ header {
 }
 
 .welcome-btn {
+  display: flex;
+  align-items: center;
   background-color: var(--primary);
   text-decoration: none;
   color: var(--dark);
@@ -135,6 +145,10 @@ header {
   width: 100%;
 }
 
+.about h2, p {
+  margin: 15px;
+}
+
 /* -------Our services------*/
 
 .services-grid {
@@ -151,16 +165,16 @@ header {
   justify-content: space-around;
 }
 
+/* Default button */
 .btn {
+  display: flex;
+  align-items: center;
   background-color: var(--dark);
   color: var(--light);
   font-size: var(--btn-font-size);
-  padding: 10px;
+  padding: var(--btn-padding);
   align-self: flex-start;
-}
-
-.btn span {
-  font-size: 4rem;
+  text-decoration: none;
 }
 
 /* 
@@ -179,6 +193,9 @@ header {
 /* -------Our Vision------*/
 
 .vision {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   background: url(../images/vision.jpg);
   background-size: cover;
   background-position: center;
@@ -186,13 +203,20 @@ header {
   color: var(--light);
 }
 
+.vision h3 {
+  font-size: 2.8rem;
+}
+
 .vision-btn {
   background-color: var(--dark);
-  display: inline-block;
-  padding: 30px;
+  display: flex;
+  align-items: center;
+  padding: var(--btn-padding);
   color:  var(--light);
   border: 1px solid var(--primary);
   margin: 20px 0;
+  text-decoration: none;
+  font-size: var(--btn-font-size);
 }
 
 /* -------Our Team------*/
