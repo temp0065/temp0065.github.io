@@ -135,6 +135,11 @@ header {
   font-size: var(--btn-font-size);
 }
 
+.welcome-btn:hover {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
 /* -------About Us------*/
 
 .about {
@@ -174,10 +179,6 @@ header {
   margin: 15px;
 }
 
-.btn {
-  margin: 15px;
-}
-
 /* Default button */
 .btn {
   display: flex;
@@ -188,6 +189,12 @@ header {
   padding: var(--btn-padding);
   align-self: flex-start;
   text-decoration: none;
+  margin: 15px;
+}
+
+.btn:hover {
+  background-color: var(--primary);
+  color: var(--dark);
 }
 
 /* 
@@ -233,6 +240,27 @@ header {
 }
 
 /* -------Our Team------*/
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.team-item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary);
+}
+
+.team-content {
+  margin: 15px;
+}
+
+.line-break {
+  border: 1px solid var(--primary);
+}
 
 /* -------Contact Us------*/
 
