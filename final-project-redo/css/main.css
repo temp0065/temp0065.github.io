@@ -80,8 +80,9 @@ textarea {
 
 /* -------Nav------*/
 
-header {
-  background-color: var(--dark);
+.logo {
+  position: absolute;
+  margin: 15px;
 }
 
 .nav-flex {
@@ -91,6 +92,7 @@ header {
   justify-content: center;
   text-align: center;
   padding: 20px;
+  background-color: var(--dark);
 }
 
 .nav-item {
@@ -100,9 +102,8 @@ header {
   margin: 30px;
 }
 
-.nav-item:nth-child(1) {
+.active {
   background-color: var(--primary);
-  color: var(--dark);
 }
 
 .search {
@@ -120,20 +121,22 @@ header {
   background-color: transparent;
 }
 
+
 /* -------Heading------*/
 
 .hero-banner {
   background-image: url(../images/main-banner.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-
+  padding: 200px;
 }
 
 .hero-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: transparent;
+  color: var(--light);
+  background-color: rgb(34, 34, 34, 0.3);
 }
 
 .welcome-btn {
@@ -255,6 +258,12 @@ header {
   font-size: var(--btn-font-size);
 }
 
+.vision-btn:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--dark);
+  color: var(--dark);
+}
+
 /* -------Our Team------*/
 
 .team-grid {
@@ -284,16 +293,7 @@ header {
 
 /* -------Contact Us------*/
 
-table, th, td {
-  border: 1px solid var(--dark);
-  width: 100%;
-  height: 60px;
-}
-
-th {
-  background-color: #ffe6ac;
-}
-
+/* Form */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -308,6 +308,18 @@ th {
   font-size: 1.3rem;
 }
 
+/* Table */
+table, th, td {
+  border: 1px solid var(--dark);
+  width: 100%;
+  height: 60px;
+}
+
+th {
+  background-color: #ffe6ac;
+}
+
+/* Map */
 .map-article {
   margin: 15px;
 }
