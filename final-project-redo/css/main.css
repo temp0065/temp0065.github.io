@@ -39,12 +39,23 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 h3 {
-  font-size: 2rem;
-  font-weight: 600;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 textarea {
@@ -175,7 +186,11 @@ header {
   justify-content: space-around;
 }
 
-.service-items h3, .service-items p {
+.service-items h3 {
+  margin: 40px 15px 20px 15px;
+}
+
+.service-items p {
   margin: 15px;
 }
 
@@ -220,6 +235,7 @@ header {
   background-size: cover;
   background-position: center;
   padding: 80px;
+  margin: 50px 0;
   color: var(--light);
 }
 
@@ -255,11 +271,15 @@ header {
 }
 
 .team-content {
-  margin: 15px;
+  margin: 15px;;
 }
 
 .line-break {
   border: 1px solid var(--primary);
+}
+
+.team-content h3, .team-content h4, .team-content p, .team-content hr {
+  margin: 15px;
 }
 
 /* -------Contact Us------*/
