@@ -335,16 +335,20 @@ textarea {
 
 table {
   margin: 25px auto;
+  width: 98%;
 }
 
 table, th, td {
   border: 1px solid var(--dark);
-  width: 98%;
   padding: 20px;
 }
 
 th {
   background-color: #ffe6ac;
+}
+
+.days {
+  width: 60%;
 }
 
 /* Map */
@@ -378,12 +382,13 @@ footer p:nth-child(2) {
     MEDIA QURIES
 --------------- */
 
+/*
 @media (min-width: 1200px) {
   .wrapper {
     max-width: 100%;
   }
 
-  /* -------Nav------*/
+  -------Nav------
 
   .nav-flex {
     flex-direction: row;
@@ -409,7 +414,7 @@ footer p:nth-child(2) {
     width: 80%;
   }
 
-  /* -------About Us------*/
+  -------About Us------
 
   .about {
     flex-direction: row;
@@ -426,10 +431,10 @@ footer p:nth-child(2) {
     margin: 0 200px 0 0;
   }
 
-  /* -------Our services------*/
+  -------Our services------
 
   .services-grid {
-    margin: 20px;
+    margin: 0 150px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -458,7 +463,11 @@ footer p:nth-child(2) {
     grid-area: e;
   }
 
-  /* Our Team */
+  Our Team
+
+  .team-grid {
+    gap: 0px;
+  }
 
   .team-item {
     flex-direction: row;
@@ -467,4 +476,13 @@ footer p:nth-child(2) {
   .team-item:nth-child(2) {
     flex-direction: row-reverse;
   }
+
+  .team-item img {
+    flex: 1 1 0;
+  }
+
+  .team-content {
+    flex: 1 1 0;
+  }
 }
+/*
