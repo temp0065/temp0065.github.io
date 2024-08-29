@@ -240,19 +240,6 @@ textarea {
   color: var(--dark);
 }
 
-/* 
-@media (min-width: 760px) {
-  .our-services {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-
-  .services-grid {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-  }
-} */
-
 /* -------Our Vision------*/
 
 .vision {
@@ -385,4 +372,99 @@ footer a {
 
 footer p:nth-child(2) {
   margin-top: 20px;
+}
+
+/* ---------------
+    MEDIA QURIES
+--------------- */
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 100%;
+  }
+
+  /* -------Nav------*/
+
+  .nav-flex {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+  .main-nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-nav ul li {
+    margin: 0 10px;
+  }
+
+  .logo {
+    position: relative;
+    width: 70px;
+  }
+
+  .searchbar {
+    width: 80%;
+  }
+
+  /* -------About Us------*/
+
+  .about {
+    flex-direction: row;
+  }
+
+  .about img {
+    max-width: 700px;
+    margin: 0 0px 0 100px;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 200px 0 0;
+  }
+
+  /* -------Our services------*/
+
+  .services-grid {
+    margin: 20px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+      "a a a b b b"
+      "c c d d e e";
+    gap: 20px;
+  }
+
+  .service-items:nth-child(1) {
+    grid-area: a;
+  }
+
+  .service-items:nth-child(2) {
+    grid-area: b;
+  }
+
+  .service-items:nth-child(3) {
+    grid-area: c;
+  }
+
+  .service-items:nth-child(4) {
+    grid-area: d;
+  }
+
+  .service-items:nth-child(5) {
+    grid-area: e;
+  }
+
+  /* Our Team */
+
+  .team-item {
+    flex-direction: row;
+  }
+
+  .team-item:nth-child(2) {
+    flex-direction: row-reverse;
+  }
 }
