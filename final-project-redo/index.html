@@ -46,8 +46,8 @@
                 <img src="images/about-us.jpg" alt="Image of ping pong table">
                 <div class="about-content">
                     <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorem rem, quae debitis possimus nisi id iure repudiandae blanditiis, quisquam distinctio molestias. Corporis, quaerat obcaecati saepe dolorem sunt explicabo vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus deleniti voluptas impedit? Nemo fugiat possimus quibusdam ullam! Eius maiores, omnis ea possimus vel ullam consectetur, eos optio voluptas nulla deleniti.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorem rem, quae debitis possimus nisi id iure repudiandae blanditiis, quisquam distinctio molestias. Corporis, quaerat obcaecati saepe dolorem sunt explicabo vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus deleniti voluptas impedit? Nemo fugiat possimus quibusdam ullam! Eius maiores, omnis ea possimus vel ullam consectetur, eos optio voluptas nulla deleniti.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorem rem, quae debitis possimus nisi id iure repudiandae blanditiis, quisquam distinctio molestias. Corporis, quaerat obcaecati saepe dolorem sunt explicabo vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit dolorem rem, quae debitis possimus nisi id iure repudiandae blanditiis, quisquam distinctio molestias. Corporis, quaerat obcaecati saepe dolorem sunt explicabo vitae? Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
                 </div>
             </section>
             
@@ -127,44 +127,46 @@
     
         <section class="contact-us">
             <h2 class="section-heading">Contact Us</h2>
-            <article class="form-article">
-                <h3 class="secondary-heading">Send us a message</h3>
-                <form action="" class="contact-form" role="form">
-                    <label for="name">Full Name</label>
-                    <input type="text">
+            <div class="contact-flex">
+                <article class="form-article contact-item">
+                    <h3 class="secondary-heading">Send us a message</h3>
+                    <form action="" class="contact-form" role="form">
+                        <label for="name">Full Name</label>
+                        <input type="text">
+            
+                        <label for="name">Email</label>
+                        <input type="text">
+            
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+            
+                        <button class="send-btn">Send</button>
+                    </form>
+                </article>
         
-                    <label for="name">Email</label>
-                    <input type="text">
+                <article class="table-article contact-item">
+                    <h3 class="secondary-heading">Hours of operation</h3>
+                    <table>
+                        <tr>
+                            <th class="days">Days</th>
+                            <th class="hours">Hours</th>
+                        </tr>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>9 AM - 6 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday - Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </table>
+                </article>
         
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message"></textarea>
-        
-                    <button class="send-btn">Send</button>
-                </form>
-            </article>
-    
-            <article class="table-article">
-                <h3 class="secondary-heading">Hours of operation</h3>
-                <table>
-                    <tr>
-                        <th class="days">Days</th>
-                        <th class="hours">Hours</th>
-                    </tr>
-                    <tr>
-                        <td>Monday - Friday</td>
-                        <td>9 AM - 6 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday - Sunday</td>
-                        <td>Closed</td>
-                    </tr>
-                </table>
-            </article>
-    
-            <article class="map-article">
-                <h3 class="secondary-heading">Location</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3941304952496!2d-75.75466849029758!3d45.34967866061182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1715275760993!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-            </article>
+                <article class="map-article contact-image">
+                    <h3 class="secondary-heading">Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.3941304952496!2d-75.75466849029758!3d45.34967866061182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1715275760993!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                </article>
+            </div>
         </section>
     
         <footer>
