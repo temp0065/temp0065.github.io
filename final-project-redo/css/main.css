@@ -94,8 +94,9 @@ textarea {
 /* -------Nav------*/
 
 .logo {
-  position: absolute;
-  margin: 15px;
+  position: relative;
+  left: -360px;
+  width: 140px;
 }
 
 .nav-flex {
@@ -104,7 +105,7 @@ textarea {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
+  padding: 130px 0 20px 0;
   background-color: var(--dark);
 }
 
@@ -121,6 +122,7 @@ textarea {
 .active {
   background-color: var(--primary);
   color: var(--dark);
+  padding: 270px 400px 0 400px;
 }
 
 .search {
@@ -419,11 +421,15 @@ footer p:nth-child(2) {
 
   /* -------Nav------ */
 
+  .logo {
+    width: 70px;
+    position: relative;
+  }
+
   .nav-flex {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 40px;
   }
 
   .nav-item {
@@ -433,25 +439,23 @@ footer p:nth-child(2) {
   .main-nav ul {
     display: flex;
     flex-direction: row;
-    margin-left: 160px;
   }
 
   .main-nav ul li {
     margin: 0 30px;
   }
 
-  .logo {
-    width: 70px;
-    left: 80px;
-    top: 10px;
-  }
 
   .searchbar {
-    width: 80%;
+    width: 200px;
   }
 
   .active {
     padding: 14px 30px;
+  }
+
+  .active:hover {
+    background-color: var(--secondary);
   }
 
   /* Heading */
@@ -560,3 +564,4 @@ footer p:nth-child(2) {
     height: 520px;
   }
 }
+
