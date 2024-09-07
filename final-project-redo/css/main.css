@@ -1,8 +1,5 @@
 /* ---------------
-    COLOUR SCHEME 
-    
-  #c78c06 #ffe6ac, #222
-    
+    VARIANTS    
 --------------- */
 
 :root {
@@ -119,6 +116,10 @@ textarea {
   font-size: 1.4rem;
 }
 
+.nav-item:hover {
+  text-decoration: underline;
+}
+
 .active {
   background-color: var(--primary);
   color: var(--dark);
@@ -133,9 +134,6 @@ textarea {
 .searchbar {
   width: 100%;
   padding: 10px;
-}
-
-.searchbar::placeholder {
   font-size: 1.2rem;
 }
 
@@ -143,6 +141,11 @@ textarea {
   color: var(--primary);
   border: 1px solid var(--primary);
   background-color: transparent;
+}
+
+.search-btn:hover {
+  background-color: var(--primary);
+  color: var(--light)
 }
 
 .search-icon {
@@ -225,7 +228,6 @@ textarea {
   background-color: var(--secondary);
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 
 .service-items h3 {
@@ -405,6 +407,10 @@ footer a {
   color: var(--primary);
 }
 
+footer a:hover {
+  color: var(--light);
+}
+
 footer p:nth-child(2) {
   margin-top: 20px;
 }
@@ -472,14 +478,13 @@ footer p:nth-child(2) {
   }
 
   .about img {
-    width: 80%;;
+    width: 50%;
     margin: 0 0px 0 100px;
   }
 
   .about-content {
     display: flex;
     flex-direction: column;
-
   }
 
   /* -------Our services------ */
@@ -487,11 +492,17 @@ footer p:nth-child(2) {
   .services-grid {
     margin: 0 150px;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 730px;
     grid-template-areas: 
       "a a a b b b"
       "c c d d e e";
     gap: 20px;
+  }
+
+  .service-items .btn {
+    align-self: center;
+    justify-content: center;
+    width: 90%;
   }
 
   .service-items:nth-child(1) {
