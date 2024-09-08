@@ -92,8 +92,9 @@ textarea {
 
 .logo {
   position: relative;
-  left: -360px;
-  width: 140px;
+  width: 120px;
+  margin: 0 0 80px -73vw;
+  background-color: #c78c06;
 }
 
 .nav-flex {
@@ -102,12 +103,15 @@ textarea {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 130px 0 20px 0;
+  height: 700px;
   background-color: var(--dark);
 }
 
-.main-nav ul li {
-  margin: 30px;
+.main-nav ul {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .nav-item {
@@ -123,12 +127,13 @@ textarea {
 .active {
   background-color: var(--primary);
   color: var(--dark);
-  padding: 270px 400px 0 400px;
+  padding: 0 44vw;
+  padding-top: 240px;
 }
 
 .search {
   display: flex;
-  width: 60%;
+  width: 95%;
 }
 
 .searchbar {
@@ -261,28 +266,33 @@ textarea {
 .vision {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: start;
   background: url(../images/vision.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 80px;
+  height: 370px;
   margin: 50px 0;
   color: var(--light);
 }
 
 .vision h3 {
   font-size: 2.8rem;
-  margin: 20px 0;
+  margin: 0 10px;
+}
+
+.vision p {
+  margin: 0 10px;
 }
 
 .vision-btn {
   background-color: var(--dark);
   display: flex;
+  margin: 0 10px;
   align-items: center;
   padding: var(--btn-padding);
   color:  var(--light);
   border: 1px solid var(--primary);
-  margin: 20px 0;
   text-decoration: none;
   font-size: var(--btn-font-size);
 }
@@ -421,6 +431,7 @@ footer p:nth-child(2) {
 
 
 @media (min-width: 1200px) {
+
   .wrapper {
     max-width: 100%;
   }
@@ -428,14 +439,15 @@ footer p:nth-child(2) {
   /* -------Nav------ */
 
   .logo {
-    width: 70px;
     position: relative;
+    width: 90px;
+    margin: 0;
   }
 
   .nav-flex {
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    height: 150px;
+    padding: 0;
   }
 
   .nav-item {
@@ -445,12 +457,13 @@ footer p:nth-child(2) {
   .main-nav ul {
     display: flex;
     flex-direction: row;
+    height: auto;
+    width: 800px;
   }
 
   .main-nav ul li {
     margin: 0 30px;
   }
-
 
   .searchbar {
     width: 200px;
@@ -550,8 +563,16 @@ footer p:nth-child(2) {
 
   /* Our Vision */
 
-  .vision {
-    padding: 40px;
+  .vision h3 {
+    margin: 0 70px;
+  }
+
+  .vision p {
+    margin: 0 70px;
+  }
+
+  .vision-btn {
+    margin:  0 70px;
   }
 
   /* Contact Us */
